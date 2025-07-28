@@ -1,0 +1,17 @@
+{
+  "name": "ibebot",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "^1.2.21",
+    "wrangler": "^4.33.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@slipher/generic-adapter": "^0.0.5",
+    "seyfert": "^3.2.6"
+  }
+}
