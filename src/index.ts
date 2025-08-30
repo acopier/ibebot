@@ -7,8 +7,8 @@ import Ping from "./commands/ping.js";
 const client = new HttpClient();
 const adapter = new GenericAdapter(client);
 
-adapter.start();
-client.start().then(async () => {
+await adapter.start();
+await client.start().then(async () => {
   // we need to load commands manually
   // @ts-expect-error
   await client.commands.set([Ping]);
