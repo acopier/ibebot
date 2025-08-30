@@ -8,7 +8,7 @@ const client = new HttpClient();
 const adapter = new GenericAdapter(client);
 
 await adapter.start();
-await client.start().then(async () => {
+client.start().then(async () => {
   // we need to load commands manually
   // @ts-expect-error
   await client.commands.set([Ping]);
