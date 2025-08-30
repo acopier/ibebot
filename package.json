@@ -11,6 +11,6 @@
   },
   "dependencies": {
     "@slipher/generic-adapter": "^0.0.6",
-    "seyfert": "^3.2.7-dev-17041037679.0"
+    "seyfert": "^3.2.6"
   }
 }

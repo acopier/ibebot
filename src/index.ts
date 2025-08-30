@@ -5,16 +5,14 @@ import { GenericAdapter } from "@slipher/generic-adapter";
 import Ping from "./commands/ping.js";
 
 const client = new HttpClient();
-// @ts-expect-error
 const adapter = new GenericAdapter(client);
 
+adapter.start();
 client.start().then(async () => {
   // we need to load commands manually
   // @ts-expect-error
   await client.commands.set([Ping]);
 });
-
-adapter.start();
 
 export default {
   fetch(req: Request) {
