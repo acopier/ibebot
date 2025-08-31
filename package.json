@@ -13,5 +13,8 @@
   "dependencies": {
     "@slipher/generic-adapter": "^0.0.6",
     "seyfert": "^3.2.6"
+  },
+  "scripts": {
+    "build": "bun build --production --target=node --splitting --outdir=./dist ./src/index.ts"
   }
 }

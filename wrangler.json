@@ -2,7 +2,7 @@
   "$schema": "https://unpkg.com/wrangler@latest/config-schema.json",
   "name": "ibebot",
   "compatibility_date": "2025-08-22",
-  "main": "src/index.ts",
+  "main": "dist/index.ts",
   "send_metrics": false,
   "compatibility_flags": ["nodejs_compat"],
   "observability": {
