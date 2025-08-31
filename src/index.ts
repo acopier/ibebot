@@ -1,4 +1,4 @@
-import "../seyfert.config.js";
+import "../seyfert.config.mjs";
 import { HttpClient, type ParseClient } from "seyfert";
 import { GenericAdapter } from "@slipher/generic-adapter";
 
