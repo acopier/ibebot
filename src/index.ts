@@ -5,8 +5,8 @@ import { GenericAdapter } from "@slipher/generic-adapter";
 const client = new HttpClient();
 const adapter = new GenericAdapter(client);
 
-await adapter.start();
-await client.start();
+adapter.start();
+client.start();
 
 export default {
   fetch(req: Request) {
