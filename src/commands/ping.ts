@@ -21,7 +21,6 @@ const options = {
 export default class PingCommand extends Command {
   override async run(ctx: CommandContext<typeof options>) {
     const flags = ctx.options.hide ? MessageFlags.Ephemeral : undefined;
-
     await ctx.write({
       content: `Pong!`,
       flags,
