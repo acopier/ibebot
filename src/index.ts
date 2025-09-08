@@ -6,7 +6,9 @@ const client = new HttpClient();
 const adapter = new GenericAdapter(client);
 
 adapter.start();
-client.start();
+client.start().then(async () => {
+  await client.commands.load(`${import.meta.dirname}/commands`, client);
+});
 
 export default {
   fetch(req: Request) {
